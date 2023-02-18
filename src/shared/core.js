@@ -2,7 +2,7 @@ const jestOverride = require("../overrides/jest");
 const prettierOverride = require("../overrides/prettier");
 const typescriptOverride = require("../overrides/typescript");
 
-const getDefaultConfig = {
+module.exports = {
   extends: ["plugin:import/errors", "plugin:import/warnings"],
   plugins: ["import", "prefer-object-spread"],
   env: { es6: true },
@@ -51,5 +51,3 @@ const getDefaultConfig = {
   },
   overrides: [typescriptOverride, jestOverride, prettierOverride],
 };
-
-module.exports = getDefaultConfig;
