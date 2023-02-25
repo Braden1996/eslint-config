@@ -1,6 +1,7 @@
 const jestOverride = require("../overrides/jest");
 const prettierOverride = require("../overrides/prettier");
 const typescriptOverride = require("../overrides/typescript");
+const astroOverride = require("../overrides/astro");
 
 module.exports = {
   extends: ["plugin:import/errors", "plugin:import/warnings"],
@@ -49,5 +50,5 @@ module.exports = {
       },
     },
   },
-  overrides: [typescriptOverride, jestOverride, prettierOverride],
+  overrides: [typescriptOverride, jestOverride, prettierOverride, astroOverride],
 };
