@@ -1,5 +1,5 @@
 const path = require("path");
 
 module.exports = {
-    extends: [path.join(__dirname, "./core")],
+  extends: [path.join(__dirname, "./core")],
 };
